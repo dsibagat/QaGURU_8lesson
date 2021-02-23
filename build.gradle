@@ -22,7 +22,7 @@ allure {
 }
 
 dependencies {
-    testImplementation (
+    testImplementation(
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "com.github.javafaker:javafaker:1.0.2",
@@ -38,4 +38,10 @@ tasks.withType(JavaCompile) {
 
 test {
     useJUnitPlatform()
+}
+
+task negative_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'negative'
+    }
 }

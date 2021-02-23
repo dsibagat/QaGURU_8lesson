@@ -44,8 +44,8 @@ test {
     useJUnitPlatform()
 }
 
-task negative_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags 'negative'
-    }
-}
+//task negative_tests(type: Test) {
+//    useJUnitPlatform {
+//        includeTags 'negative'
+//    }
+//}

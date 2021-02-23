@@ -15,7 +15,6 @@ public class TestBase {
     static void setup() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.startMaximized = true;
 
         if (System.getProperty("remote_driver") != null) {
             // config for Java + Selenide
@@ -47,6 +46,5 @@ public class TestBase {
         attachAsText("Browser console logs", getConsoleLogs());
         if (System.getProperty("video_storage") != null)
             attachVideo();
-        closeWebDriver();
     }
 }

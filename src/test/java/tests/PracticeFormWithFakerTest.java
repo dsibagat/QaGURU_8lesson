@@ -8,7 +8,7 @@ import pages.InputFields;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
-public class PracticeFormWithFakerTest {
+public class PracticeFormWithFakerTest extends TestBase {
     InputFields steps = new InputFields();
 
     @Test

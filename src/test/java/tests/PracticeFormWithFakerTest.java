@@ -55,7 +55,7 @@ public class PracticeFormWithFakerTest extends TestBase {
     }
 
     @Test
-   // @Tag("negative")
+    @Tag("negative")
     void negativeCheckDataInForm() {
         steps.openPracticeForm()
                 .clickOnStateDropDown()
